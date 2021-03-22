@@ -89,7 +89,8 @@ def parentheses_match (expression, target)
     (match(group, target[0, group.length]) && match(expression, target.drop(group.length))) || match(remainder, target)
   else
     remainder = expression.drop(closed_parentheses_index + 1)
-    match(group, target[0, group.length]) && match(remainder, target.drop(group.length))
+    lits = group - ["("] - [")"]
+    match(group, target[0, lits.length]) && match(remainder, target.drop(lits.length))
   end
 end
 

@@ -14,3 +14,4 @@ YES: ((a)b)c with abc
 NO:  ((a)b)c with ab
 YES: (a)(b) with ab
 NO:  (a)(b) with abc
+YES: (a((b)c))def with abcdef
