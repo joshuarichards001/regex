@@ -1,0 +1,16 @@
+YES: (a) with a
+NO:  (a) with b
+YES: (a)b with ab
+NO:  (a)b with abb
+YES: a(b) with ab
+NO:  a(b) with aab
+YES: (.) with X
+NO:  (.) with 
+YES: (..) with XY
+NO:  (..) with (XY)
+YES: a(b(c)) with abc
+NO:  a(b(c)) with abcd
+YES: ((a)b)c with abc
+NO:  ((a)b)c with ab
+YES: (a)(b) with ab
+NO:  (a)(b) with abc

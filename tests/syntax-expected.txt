@@ -1,0 +1,10 @@
+SYNTAX ERROR: ( with -
+SYNTAX ERROR: ) with -
+SYNTAX ERROR: * with -
+SYNTAX ERROR: (a with a
+SYNTAX ERROR: (a(b) with ab
+SYNTAX ERROR: (a(b))) with ab
+SYNTAX ERROR: a|* with a
+SYNTAX ERROR: [^(]* with aa
+SYNTAX ERROR: \(a with error
+SYNTAX ERROR: (*a) with a

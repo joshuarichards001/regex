@@ -1,0 +1,9 @@
+YES: (X*)* with XXXXX
+NO:  ((H*)*)* with AH
+NO:  ((H*)*)* with G
+NO:  ((H*)*)* with H*H*
+NO:  ((H*)*)* with HHHHA
+YES: (a*|b*)* with abba
+YES: (a*|b*)* with 
+NO:  (a*|b*)*x with abbaa
+NO:  (a*|b*)*x with 

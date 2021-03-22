@@ -1,0 +1,74 @@
+YES: (a|b)* with a
+YES: (a|b)* with b
+YES: (a|b)* with aa
+YES: (a|b)* with bb
+YES: (a|b)* with ab
+YES: (a|b)* with ba
+YES: (a|b)* with aab
+YES: (a|b)* with bab
+NO:  (a|b)* with c
+NO:  (a|b)* with ac
+NO:  (a|b)* with abc
+NO:  (a|b)* with cab
+NO:  (a|b)* with bbbbbbc
+NO:  (a|b)* with x
+NO:  (a|b)* with a|ba|b
+NO:  (a|b)* with A
+YES: a|b* with a
+YES: a|b* with 
+YES: a|b* with b
+YES: a|b* with bbb
+NO:  a|b* with aa
+NO:  a|b* with ab
+NO:  a|b* with c
+NO:  a|b* with ba
+YES: (ab|c)* with ab
+YES: (ab|c)* with cab
+YES: (ab|c)* with abc
+YES: (ab|c)* with ababcc
+NO:  (ab|c)* with a
+NO:  (ab|c)* with b
+NO:  (ab|c)* with d
+NO:  (ab|c)* with ab|c
+NO:  ab*|c*d with 
+YES: ab*|c*d with ab
+YES: ab*|c*d with a
+YES: ab*|c*d with abbb
+YES: ab*|c*d with d
+YES: ab*|c*d with cccd
+YES: ab*|c*d with cd
+NO:  ab*|c*d with ad
+NO:  ab*|c*d with aa
+NO:  ab*|c*d with dd
+NO:  ab*|c*d with bbc
+NO:  ab*|c*d with abab
+YES: ((hello|hi) (world|earth)! )* with hello world! 
+YES: ((hello|hi) (world|earth)! )* with hi world! 
+YES: ((hello|hi) (world|earth)! )* with hi earth! 
+YES: ((hello|hi) (world|earth)! )* with hello earth! 
+YES: ((hello|hi) (world|earth)! )* with hello world! hi earth! 
+YES: ((hello|hi) (world|earth)! )* with hi earth! hello world! hi world! 
+YES: ((hello|hi) (world|earth)! )* with 
+NO:  ((hello|hi) (world|earth)! )* with hello world
+NO:  ((hello|hi) (world|earth)! )* with helloworld! 
+NO:  ((hello|hi) (world|earth)! )* with hello hi world earth! 
+NO:  ((hello|hi) (world|earth)! )* with hello world! world! 
+NO:  ((hello|hi) (world|earth)! )* with hi hi earth! 
+NO:  ((hello|hi) (world|earth)! )* with hello world!  
+NO:  ((hello|hi) (world|earth)! )* with hi earth! ! 
+YES: (<.*>(.*)</(.*)>)* with <a>b</a>
+YES: (<.*>(.*)</(.*)>)* with <a>b</c>
+YES: (<.*>(.*)</(.*)>)* with <>b</a>
+YES: (<.*>(.*)</(.*)>)* with <a href="#"></a>
+YES: (<.*>(.*)</(.*)>)* with 
+YES: (<.*>(.*)</(.*)>)* with <></><>
+YES: (<.*>(.*)</(.*)>)* with <a>b</a><b>a</b>
+YES: (<.*>(.*)</(.*)>)* with <br /><a href="#hello">hi</a>
+NO:  (<.*>(.*)</(.*)>)* with <a>b<a>
+NO:  (<.*>(.*)</(.*)>)* with hello
+NO:  (<.*>(.*)</(.*)>)* with <br />
+NO:  (<.*>(.*)</(.*)>)* with <em>
+NO:  (<.*>(.*)</(.*)>)* with </i>
+NO:  (<.*>(.*)</(.*)>)* with </i><i>
+NO:  (<.*>(.*)</(.*)>)* with <</>
+NO:  (<.*>(.*)</(.*)>)* with </>

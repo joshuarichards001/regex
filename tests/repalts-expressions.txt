@@ -1,0 +1,74 @@
+(a|b)*
+(a|b)*
+(a|b)*
+(a|b)*
+(a|b)*
+(a|b)*
+(a|b)*
+(a|b)*
+(a|b)*
+(a|b)*
+(a|b)*
+(a|b)*
+(a|b)*
+(a|b)*
+(a|b)*
+(a|b)*
+a|b*
+a|b*
+a|b*
+a|b*
+a|b*
+a|b*
+a|b*
+a|b*
+(ab|c)*
+(ab|c)*
+(ab|c)*
+(ab|c)*
+(ab|c)*
+(ab|c)*
+(ab|c)*
+(ab|c)*
+ab*|c*d
+ab*|c*d
+ab*|c*d
+ab*|c*d
+ab*|c*d
+ab*|c*d
+ab*|c*d
+ab*|c*d
+ab*|c*d
+ab*|c*d
+ab*|c*d
+ab*|c*d
+((hello|hi) (world|earth)! )*
+((hello|hi) (world|earth)! )*
+((hello|hi) (world|earth)! )*
+((hello|hi) (world|earth)! )*
+((hello|hi) (world|earth)! )*
+((hello|hi) (world|earth)! )*
+((hello|hi) (world|earth)! )*
+((hello|hi) (world|earth)! )*
+((hello|hi) (world|earth)! )*
+((hello|hi) (world|earth)! )*
+((hello|hi) (world|earth)! )*
+((hello|hi) (world|earth)! )*
+((hello|hi) (world|earth)! )*
+((hello|hi) (world|earth)! )*
+(<.*>(.*)</(.*)>)*
+(<.*>(.*)</(.*)>)*
+(<.*>(.*)</(.*)>)*
+(<.*>(.*)</(.*)>)*
+(<.*>(.*)</(.*)>)*
+(<.*>(.*)</(.*)>)*
+(<.*>(.*)</(.*)>)*
+(<.*>(.*)</(.*)>)*
+(<.*>(.*)</(.*)>)*
+(<.*>(.*)</(.*)>)*
+(<.*>(.*)</(.*)>)*
+(<.*>(.*)</(.*)>)*
+(<.*>(.*)</(.*)>)*
+(<.*>(.*)</(.*)>)*
+(<.*>(.*)</(.*)>)*
+(<.*>(.*)</(.*)>)*

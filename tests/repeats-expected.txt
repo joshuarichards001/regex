@@ -1,0 +1,63 @@
+YES: a* with a
+YES: a* with 
+YES: a* with aa
+YES: a* with aaa
+NO:  a* with b
+NO:  a* with bbb
+NO:  a* with a*
+NO:  a* with *
+YES: a*b with b
+YES: a*b with ab
+NO:  a*b with abb
+YES: a*b with aab
+NO:  a*b with bb
+NO:  a*b with a*b
+YES: ab* with a
+YES: ab* with ab
+YES: ab* with abbb
+NO:  ab* with b
+NO:  ab* with abc
+NO:  ab* with ab*
+YES: (ab)* with ab
+YES: (ab)* with 
+YES: (ab)* with abab
+YES: (ab)* with ababab
+NO:  (ab)* with abc
+NO:  (ab)* with (ab)*
+NO:  (ab)* with abb
+NO:  (ab)* with aabb
+YES: 1(11)* with 1
+NO:  1(11)* with 11
+YES: 1(11)* with 111
+NO:  1(11)* with 1111
+YES: .* with hello
+YES: .* with 
+YES: ..* with x
+YES: ..* with xy
+NO:  ..* with 
+YES: ..* with xyz
+YES: (..)* with 
+NO:  (..)* with x
+YES: (..)* with xy
+NO:  (..)* with xyz
+YES: (..)* with wxyz
+NO:  (..)* with abcde
+NO:  (..)* with 1234567
+NO:  (..)* with (..)*
+YES: (X.)* with 
+YES: (X.)* with Xa
+YES: (X.)* with XaXb
+YES: (X.)* with XaXXXc
+NO:  (X.)* with X
+NO:  (X.)* with XXa
+NO:  (X.)* with XabX
+NO:  (X.)* with XyXXy
+YES: (.y)* with syzygy
+YES: (.y)* with my
+NO:  (.y)* with thy
+NO:  (.y)* with (.y)*
+NO:  (.y)* with yyy
+NO:  (.y)* with bye
+YES: a*? with ?
+NO:  a*? with aa
+NO:  a*b with aba

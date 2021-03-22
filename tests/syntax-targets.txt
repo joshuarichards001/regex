@@ -1,0 +1,10 @@
+-
+-
+-
+a
+ab
+ab
+a
+aa
+error
+a

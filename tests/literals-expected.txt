@@ -1,0 +1,33 @@
+YES: a with a
+NO:  a with b
+NO:  b with a
+YES: b with b
+YES: abc with abc
+NO:  abc with abcd
+NO:  xyz with xy
+YES: xyz with xyz
+NO:  hello with hello world
+YES: hello with hello
+YES: !@#$%^& with !@#$%^&
+NO:  \\ with \
+YES: [ab] with [ab]
+NO:  [ab] with a
+YES: a+ with a+
+NO:  a+ with a
+NO:  [^a] with b
+YES: [^a] with [^a]
+NO:  a$ with a
+YES: a$ with a$
+YES: why? with why?
+NO:  why? with wh
+NO:  a{2} with aa
+YES: a{2} with a{2}
+YES: \[ with \[
+NO:  \[ with [
+YES: x^2 with x^2
+NO:  x^2 with xx
+NO:  $5 with 5
+YES: $5 with $5
+NO:  $5 with $
+NO:  $5 with 
+NO:  a?? with 
