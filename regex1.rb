@@ -1,10 +1,11 @@
 # Inspiration from this blog post https://nickdrane.com/build-your-own-regex/
-# expression_file = "tests/#{ARGV[0]}"
-# target_file = "tests/#{ARGV[1]}"
-file_name = "all"
-expression_file = "tests/#{file_name}-expressions.txt"
-target_file = "tests/#{file_name}-targets.txt"
-expected_file = target_file[0, target_file.length - 12] + "-expected.txt"
+# file_name = "all"
+# expression_file = "tests/#{file_name}-expressions.txt"
+# target_file = "tests/#{file_name}-targets.txt"
+# expected_file = target_file[0, target_file.length - 12] + "-expected.txt"
+
+expression_file = ARGV[0]
+target_file = ARGV[1]
 
 parentheses_remainder = []
 parentheses_content = []
@@ -19,33 +20,33 @@ end
 File.open(target_file).each do |line|
   target_array.push(line.chomp)
 end
-File.open(expected_file).each do |line|
-  expected_array.push(line.chomp)
-end
+# File.open(expected_file).each do |line|
+#   expected_array.push(line.chomp)
+# end
 
-def run(expression_array, target_array, expected_array)
+def run(expression_array, target_array)
   correct_count = 0
   wrong_count = 0
-  expression_array.zip(target_array, expected_array).each do |expression, target, expected|
+  expression_array.zip(target_array).each do |expression, target|
     begin
       target.match(expression)
       if match(expression.chars, target.chars)
-        result = "YES: #{expression} with #{target}"
+        puts "YES: #{expression} with #{target}"
       else
-        result = "NO:  #{expression} with #{target}"
+        puts "NO:  #{expression} with #{target}"
       end
     rescue RegexpError => e
-      result = "SYNTAX ERROR: #{expression} with #{target}"
+      puts "SYNTAX ERROR: #{expression} with #{target}"
     end
-    if result == expected
-      correct_count += 1
-      puts "CORRECT => " + result
-    else
-      wrong_count += 1
-      puts "WRONG => " + result
-    end
+    # if result == expected
+    #   correct_count += 1
+    #   puts "CORRECT => " + result
+    # else
+    #   wrong_count += 1
+    #   puts "WRONG => " + result
+    # end
   end
-  puts correct_count.to_f/(correct_count.to_f+wrong_count.to_f)
+  # puts correct_count.to_f/(correct_count.to_f+wrong_count.to_f)
 end
 
 def match(expression, target)
@@ -155,4 +156,4 @@ def find_outer_pipe(array)
   end
 end
 
-run(expression_array, target_array, expected_array)
+run(expression_array, target_array)
